@@ -1,0 +1,108 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'space grotesk',sans-serif;
+}
+body{
+    background-color: #050505;
+    color: #ffffff;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: rgba(5,5,5,0.8);
+    background-filter: blur(10px);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.brand-logo{
+    height: 50px;
+    width: auto;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 5px #00d2ff);
+    transition: 0.3s ease;
+}
+.brand-logo:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px #00d2ff);
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #888;
+    transition: 0.3s;
+}
+.nav-links a:hover{
+    color: #00d2ff;
+    text-shadow: 0 0 10px #00d2ff;
+}
+.hero{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(circle at center,#0001a33 0%, #050505 70%);
+}
+.hero h1{
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+.glow{
+    color: #00d2ff;
+    text-shadow: 0 0 20px rgba(0,210,255,0.5);
+}
+.services-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 50%; 
+}
+.services-grid {
+    display: grid; /* Requirement: Grid */
+    grid-template-columns: 1fr; /* Stacked cards */
+    gap: 20px;
+    width: 50%; /* Give it half the screen */
+}
+.section-title {
+    font-size: 3rem;
+    width: 40%;
+    text-align: left;
+}
+.card{
+    background: #0a0a0a;
+    padding: 40px;
+    border: 1px solid #1a1a1a;
+    transition: 0.3 10px 30px rgba(0,210,255,0.1);
+}
+.btn-main{
+    padding: 15px 40px;
+    background-color: #00d2ff;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.btn-main:hover{
+    background: #ffffff;
+    bax-shadow: 0 0 20px #00d2ff;
+}
