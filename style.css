@@ -20,7 +20,7 @@ body{
     width: 100%;
     z-index: 100;
     background: rgba(5,5,5,0.8);
-    background-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 .logo{
     display: flex;
@@ -60,7 +60,7 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: radial-gradient(circle at center,#0001a33 0%, #050505 70%);
+    background: radial-gradient(circle at center, #0001a3 0%, #050505 70%);
 }
 .hero h1{
     font-size: 5rem;
@@ -104,5 +104,5 @@ body{
 }
 .btn-main:hover{
     background: #ffffff;
-    bax-shadow: 0 0 20px #00d2ff;
+    box-shadow: 0 0 20px #00d2ff;
 }
